@@ -11,6 +11,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
+---------------
 entity design_1_wrapper is
   port (
     CNC_VSL_ALIGN_N : in STD_LOGIC;
