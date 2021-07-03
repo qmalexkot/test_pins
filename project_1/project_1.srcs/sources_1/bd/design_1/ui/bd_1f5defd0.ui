@@ -1,0 +1,117 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.857143",
+   "Default View_TopLeft":"-76,-429",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port VSL_DIMM0 -pg 1 -lvl 6 -x 1640 -y 500 -defaultsOSRD
+preplace port VSL_DIMM0_REF_CLK -pg 1 -lvl 0 -x -980 -y 190 -defaultsOSRD
+preplace port COMe_VSL_PCIE -pg 1 -lvl 6 -x 1640 -y 210 -defaultsOSRD
+preplace port PCIe_0_REFCLK -pg 1 -lvl 0 -x -980 -y 510 -defaultsOSRD
+preplace port VSL_DIMM1_REF_CLK -pg 1 -lvl 0 -x -980 -y 100 -defaultsOSRD
+preplace port VSL_DIMM2_REF_CLK -pg 1 -lvl 0 -x -980 -y 60 -defaultsOSRD
+preplace port VSL_DIMM1 -pg 1 -lvl 6 -x 1640 -y 50 -defaultsOSRD
+preplace port VSL_DIMM2 -pg 1 -lvl 6 -x 1640 -y 90 -defaultsOSRD
+preplace port PCIe_1_REFCLK -pg 1 -lvl 0 -x -980 -y 890 -defaultsOSRD
+preplace port OMe_VSL1_PCIE -pg 1 -lvl 6 -x 1640 -y 470 -defaultsOSRD
+preplace port port-id_LMK_VSL_250M_CLK_IN_N -pg 1 -lvl 0 -x -980 -y -310 -defaultsOSRD
+preplace port port-id_LMK_VSL_250M_CLK_IN_P -pg 1 -lvl 0 -x -980 -y -330 -defaultsOSRD
+preplace port port-id_LMK_VSL_500M_CLK_IN_N -pg 1 -lvl 0 -x -980 -y -270 -defaultsOSRD
+preplace port port-id_LMK_VSL_500M_CLK_IN_P -pg 1 -lvl 0 -x -980 -y -250 -defaultsOSRD
+preplace port port-id_LMK_VSL_RFU_CLK_IN_N -pg 1 -lvl 0 -x -980 -y -230 -defaultsOSRD
+preplace port port-id_CNC_VSL_ALIGN_N -pg 1 -lvl 0 -x -980 -y -350 -defaultsOSRD
+preplace port port-id_CNC_VSL_ALIGN_P -pg 1 -lvl 0 -x -980 -y -370 -defaultsOSRD
+preplace port port-id_LMK_VSL_RFU_CLK_IN_P -pg 1 -lvl 0 -x -980 -y -210 -defaultsOSRD
+preplace port port-id_CORE_RST -pg 1 -lvl 0 -x -980 -y -440 -defaultsOSRD
+preplace port port-id_XPLL_RST -pg 1 -lvl 0 -x -980 -y -290 -defaultsOSRD
+preplace portBus LVDS_707_p -pg 1 -lvl 0 -x -980 -y -110 -defaultsOSRD
+preplace portBus LVDS_708_p -pg 1 -lvl 0 -x -980 -y -130 -defaultsOSRD
+preplace portBus LVDS_707_n -pg 1 -lvl 0 -x -980 -y -90 -defaultsOSRD
+preplace portBus LVDS_706_n -pg 1 -lvl 0 -x -980 -y -170 -defaultsOSRD
+preplace portBus LVDS_706_p -pg 1 -lvl 0 -x -980 -y -190 -defaultsOSRD
+preplace portBus LVDS_708_n -pg 1 -lvl 0 -x -980 -y -150 -defaultsOSRD
+preplace portBus RD_CLK_706_n -pg 1 -lvl 0 -x -980 -y -10 -defaultsOSRD
+preplace portBus RD_CLK_707_n -pg 1 -lvl 0 -x -980 -y -70 -defaultsOSRD
+preplace portBus RD_CLK_707_p -pg 1 -lvl 0 -x -980 -y 10 -defaultsOSRD
+preplace portBus RD_CLK_708_n -pg 1 -lvl 0 -x -980 -y -390 -defaultsOSRD
+preplace portBus RD_CLK_708_p -pg 1 -lvl 0 -x -980 -y -50 -defaultsOSRD
+preplace portBus RD_CLK_706_p -pg 1 -lvl 0 -x -980 -y -30 -defaultsOSRD
+preplace portBus XPLL_IN_p_0 -pg 1 -lvl 0 -x -980 -y 80 -defaultsOSRD
+preplace portBus XPLL_IN_n_0 -pg 1 -lvl 0 -x -980 -y 30 -defaultsOSRD
+preplace inst axi_noc_0 -pg 1 -lvl 4 -x 990 -y 490 -defaultsOSRD
+preplace inst versal_cips_0 -pg 1 -lvl 1 -x -570 -y 550 -defaultsOSRD
+preplace inst axi_noc_2 -pg 1 -lvl 5 -x 1420 -y 90 -defaultsOSRD -resize 340 263
+preplace inst advanced_io_wizard_0 -pg 1 -lvl 3 -x 520 -y -150 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x -100 -y -380 -defaultsOSRD
+preplace inst sys_clk_module_0 -pg 1 -lvl 1 -x -570 -y -270 -defaultsOSRD
+preplace inst FIFO_CTRL_0 -pg 1 -lvl 4 -x 990 -y -430 -defaultsOSRD
+preplace netloc versal_cips_0_cpm_pcie_noc_axi0_clk 1 1 3 -230 600 N 600 760
+preplace netloc versal_cips_0_cpm_pcie_noc_axi1_clk 1 1 3 -230 620 N 620 760
+preplace netloc versal_cips_0_fpd_axi_noc_axi0_clk 1 1 3 -230 580 N 580 760
+preplace netloc versal_cips_0_fpd_cci_noc_axi0_clk 1 1 3 -230 500 N 500 760
+preplace netloc versal_cips_0_fpd_cci_noc_axi1_clk 1 1 3 -230 520 N 520 760
+preplace netloc versal_cips_0_fpd_cci_noc_axi2_clk 1 1 3 -230 540 N 540 760
+preplace netloc versal_cips_0_fpd_cci_noc_axi3_clk 1 1 3 -230 560 N 560 760
+preplace netloc versal_cips_0_lpd_axi_noc_clk 1 1 3 -230 640 N 640 760
+preplace netloc versal_cips_0_pmc_axi_noc_axi0_clk 1 1 3 -230 660 N 660 760
+preplace netloc xlconstant_0_dout 1 2 1 30 -380n
+preplace netloc LMK_VSL_250M_CLK_IN_N_0_1 1 0 1 -940J -310n
+preplace netloc LMK_VSL_250M_CLK_IN_P_0_1 1 0 1 -930J -330n
+preplace netloc LMK_VSL_500M_CLK_IN_N_0_1 1 0 1 -940J -270n
+preplace netloc LMK_VSL_500M_CLK_IN_P_0_1 1 0 1 -940J -250n
+preplace netloc LMK_VSL_RFU_CLK_IN_N_0_1 1 0 1 -940J -230n
+preplace netloc CNC_VSL_ALIGN_N_0_1 1 0 1 -930J -350n
+preplace netloc CNC_VSL_ALIGN_P_0_1 1 0 1 -920J -370n
+preplace netloc LMK_VSL_RFU_CLK_IN_P_0_1 1 0 1 -940J -210n
+preplace netloc LVDS_707_p_0_1 1 0 3 -920J -120 NJ -120 NJ
+preplace netloc LVDS_708_p_0_1 1 0 3 -960J -60 NJ -60 10J
+preplace netloc LVDS_707_n_0_1 1 0 3 -920J -100 NJ -100 NJ
+preplace netloc LVDS_706_n_0_1 1 0 3 -930J -140 -240J -180 NJ
+preplace netloc LVDS_706_p_0_1 1 0 3 -920J -130 -250J -200 NJ
+preplace netloc LVDS_708_n_0_1 1 0 3 -940J -20 NJ -20 NJ
+preplace netloc RD_CLK_706_n_0_1 1 0 3 NJ -10 -210J -140 NJ
+preplace netloc RD_CLK_707_n_0_1 1 0 3 NJ -70 NJ -70 50J
+preplace netloc RD_CLK_707_p_0_1 1 0 3 -920J -80 NJ -80 NJ
+preplace netloc RD_CLK_708_n_0_1 1 0 3 -920J -440 NJ -440 20J
+preplace netloc RD_CLK_708_p_0_1 1 0 3 NJ -50 NJ -50 0J
+preplace netloc RD_CLK_706_p_0_1 1 0 3 NJ -30 -220J -160 NJ
+preplace netloc rst_0_1 1 0 3 -960J -450 NJ -450 40J
+preplace netloc Net 1 0 3 -950 -460 N -460 50
+preplace netloc advanced_io_wizard_0_intf_rdy 1 3 1 770 -430n
+preplace netloc advanced_io_wizard_0_fifo_empty 1 3 1 790 -450n
+preplace netloc FIFO_CTRL_0_FIFO_RD_EN 1 2 3 60 -460 800J -350 1160
+preplace netloc advanced_io_wizard_0_bank0_pll_clkout0 1 2 2 70 -450 750
+preplace netloc data_to_fabric_LVDS_706 1 3 1 N -10
+preplace netloc data_to_fabric_LVDS_707 1 3 1 N 30
+preplace netloc data_to_fabric_LVDS_708 1 3 1 N 70
+preplace netloc XPLL_IN_p_0_1 1 0 3 -940J 40 NJ 40 NJ
+preplace netloc XPLL_IN_n_0_1 1 0 3 NJ 30 NJ 30 30J
+preplace netloc versal_cips_0_PCIE1_GT 1 1 5 -220 270 N 270 750 240 NJ 240 1610J
+preplace netloc gt_refclk0_0_1 1 0 1 -940J 510n
+preplace netloc versal_cips_0_FPD_CCI_NOC_0 1 1 3 N 210 N 210 800
+preplace netloc axi_noc_0_M01_INI 1 4 1 1170 30n
+preplace netloc sys_clk0_0_3 1 0 5 NJ 100 N 100 50 150 770 140 N
+preplace netloc versal_cips_0_CPM_PCIE_NOC_1 1 1 3 -210 340 N 340 740
+preplace netloc axi_noc_0_M02_INI 1 4 1 1180 60n
+preplace netloc sys_clk0_0_1 1 0 4 -940J 150 N 150 10 160 770
+preplace netloc versal_cips_0_FPD_CCI_NOC_3 1 1 3 -250 280 N 280 780
+preplace netloc axi_noc_0_M03_INI 1 4 1 1190 100n
+preplace netloc versal_cips_0_FPD_CCI_NOC_2 1 1 3 N 250 N 250 730
+preplace netloc gt_refclk1_0_1 1 0 1 -940 560n
+preplace netloc axi_noc_2_CH0_DDR4_1 1 5 1 1620 90n
+preplace netloc versal_cips_0_NOC_LPD_AXI_0 1 1 3 -230 360 N 360 730
+preplace netloc versal_cips_0_PMC_NOC_AXI_0 1 1 3 -250 380 N 380 720
+preplace netloc versal_cips_0_FPD_CCI_NOC_1 1 1 3 N 230 N 230 790
+preplace netloc versal_cips_0_CPM_PCIE_NOC_0 1 1 3 -210 320 N 320 750
+preplace netloc axi_noc_0_CH0_DDR4_0 1 4 2 1200 500 N
+preplace netloc axi_noc_2_CH0_DDR4_0 1 5 1 1620 40n
+preplace netloc versal_cips_0_PCIE0_GT 1 1 5 -240 260 N 260 760 250 N 250 1620
+preplace netloc axi_noc_0_M00_INI 1 4 1 1160 0n
+preplace netloc versal_cips_0_FPD_AXI_NOC_0 1 1 3 -210 300 N 300 760
+preplace netloc sys_clk1_0_1 1 0 5 NJ 60 -240 180 N 180 N 180 N
+levelinfo -pg 1 -980 -570 -100 520 990 1420 1640
+pagesize -pg 1 -db -bbox -sgen -1220 -510 1810 1670
+"
+}
+0

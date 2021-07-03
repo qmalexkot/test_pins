@@ -1,0 +1,4190 @@
+{
+    "design": {
+        "design_info": {
+            "boundary_crc": "0x19D98969BAD70BED",
+            "design_src": "SBD",
+            "device": "xcvc1802-vsva2197-2MP-e-S",
+            "name": "bd_8b85",
+            "rev_ctrl_bd_flag": "RevCtrlBdOff",
+            "scoped": "true",
+            "synth_flow_mode": "None",
+            "tool_version": "2020.3",
+            "validated": "true",
+            "gen_directory": "."
+        },
+        "design_tree": {
+            "MC0_ddrc": "",
+            "MC1_ddrc": "",
+            "hier_nsw": {
+                "S00_INI_nsw": "",
+                "MC0_nsw": "",
+                "S01_INI_nsw": "",
+                "MC1_nsw": "",
+                "S02_INI_nsw": "",
+                "MC2_nsw": "",
+                "S03_INI_nsw": "",
+                "MC3_nsw": ""
+            }
+        },
+        "interface_ports": {
+            "S00_INI": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:inimm:1.0",
+                "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                "address_space_ref": "S00_INI",
+                "base_address": {
+                    "minimum": "0x00000000",
+                    "maximum": "0xFFFFFFFFFFFFFFFF",
+                    "width": "64"
+                },
+                "parameters": {
+                    "ADDR_WIDTH": {
+                        "value": "64",
+                        "value_src": "default"
+                    },
+                    "CATEGORY": {
+                        "value": "pl",
+                        "value_src": "default_prop"
+                    },
+                    "COMPUTED_STRATEGY": {
+                        "value": "load",
+                        "value_src": "default_prop"
+                    },
+                    "CONNECTIONS": {
+                        "value": "MC_0 { read_bw {1720} write_bw {1720} read_avg_burst {4} write_avg_burst {4}} "
+                    },
+                    "INI_STRATEGY": {
+                        "value": "auto",
+                        "value_src": "default"
+                    },
+                    "MY_CATEGORY": {
+                        "value": "pl",
+                        "value_src": "default"
+                    },
+                    "R_LATENCY": {
+                        "value": "300",
+                        "value_src": "default"
+                    },
+                    "R_MAX_BURST_LENGTH": {
+                        "value": "256",
+                        "value_src": "default"
+                    },
+                    "R_RATE_LIMITER": {
+                        "value": "10",
+                        "value_src": "default"
+                    },
+                    "R_TRAFFIC_CLASS": {
+                        "value": "BEST_EFFORT",
+                        "value_src": "default"
+                    },
+                    "WRITE_BUFFER_SIZE": {
+                        "value": "80",
+                        "value_src": "default"
+                    },
+                    "W_MAX_BURST_LENGTH": {
+                        "value": "256",
+                        "value_src": "default"
+                    },
+                    "W_RATE_LIMITER": {
+                        "value": "10",
+                        "value_src": "default"
+                    },
+                    "W_TRAFFIC_CLASS": {
+                        "value": "BEST_EFFORT",
+                        "value_src": "default"
+                    }
+                }
+            },
+            "S01_INI": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:inimm:1.0",
+                "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                "address_space_ref": "S01_INI",
+                "base_address": {
+                    "minimum": "0x00000000",
+                    "maximum": "0xFFFFFFFFFFFFFFFF",
+                    "width": "64"
+                },
+                "parameters": {
+                    "ADDR_WIDTH": {
+                        "value": "64",
+                        "value_src": "default"
+                    },
+                    "CATEGORY": {
+                        "value": "pl",
+                        "value_src": "default_prop"
+                    },
+                    "COMPUTED_STRATEGY": {
+                        "value": "load",
+                        "value_src": "default_prop"
+                    },
+                    "CONNECTIONS": {
+                        "value": "MC_1 { read_bw {1720} write_bw {1720} read_avg_burst {4} write_avg_burst {4}} "
+                    },
+                    "INI_STRATEGY": {
+                        "value": "auto",
+                        "value_src": "default"
+                    },
+                    "MY_CATEGORY": {
+                        "value": "pl",
+                        "value_src": "default"
+                    },
+                    "R_LATENCY": {
+                        "value": "300",
+                        "value_src": "default"
+                    },
+                    "R_MAX_BURST_LENGTH": {
+                        "value": "256",
+                        "value_src": "default"
+                    },
+                    "R_RATE_LIMITER": {
+                        "value": "10",
+                        "value_src": "default"
+                    },
+                    "R_TRAFFIC_CLASS": {
+                        "value": "BEST_EFFORT",
+                        "value_src": "default"
+                    },
+                    "WRITE_BUFFER_SIZE": {
+                        "value": "80",
+                        "value_src": "default"
+                    },
+                    "W_MAX_BURST_LENGTH": {
+                        "value": "256",
+                        "value_src": "default"
+                    },
+                    "W_RATE_LIMITER": {
+                        "value": "10",
+                        "value_src": "default"
+                    },
+                    "W_TRAFFIC_CLASS": {
+                        "value": "BEST_EFFORT",
+                        "value_src": "default"
+                    }
+                }
+            },
+            "S02_INI": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:inimm:1.0",
+                "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                "address_space_ref": "S02_INI",
+                "base_address": {
+                    "minimum": "0x00000000",
+                    "maximum": "0xFFFFFFFFFFFFFFFF",
+                    "width": "64"
+                },
+                "parameters": {
+                    "ADDR_WIDTH": {
+                        "value": "64",
+                        "value_src": "default"
+                    },
+                    "CATEGORY": {
+                        "value": "pl",
+                        "value_src": "default_prop"
+                    },
+                    "COMPUTED_STRATEGY": {
+                        "value": "load",
+                        "value_src": "default_prop"
+                    },
+                    "CONNECTIONS": {
+                        "value": "MC_2 { read_bw {1720} write_bw {1720} read_avg_burst {4} write_avg_burst {4}} "
+                    },
+                    "INI_STRATEGY": {
+                        "value": "auto",
+                        "value_src": "default"
+                    },
+                    "MY_CATEGORY": {
+                        "value": "pl",
+                        "value_src": "default"
+                    },
+                    "R_LATENCY": {
+                        "value": "300",
+                        "value_src": "default"
+                    },
+                    "R_MAX_BURST_LENGTH": {
+                        "value": "256",
+                        "value_src": "default"
+                    },
+                    "R_RATE_LIMITER": {
+                        "value": "10",
+                        "value_src": "default"
+                    },
+                    "R_TRAFFIC_CLASS": {
+                        "value": "BEST_EFFORT",
+                        "value_src": "default"
+                    },
+                    "WRITE_BUFFER_SIZE": {
+                        "value": "80",
+                        "value_src": "default"
+                    },
+                    "W_MAX_BURST_LENGTH": {
+                        "value": "256",
+                        "value_src": "default"
+                    },
+                    "W_RATE_LIMITER": {
+                        "value": "10",
+                        "value_src": "default"
+                    },
+                    "W_TRAFFIC_CLASS": {
+                        "value": "BEST_EFFORT",
+                        "value_src": "default"
+                    }
+                }
+            },
+            "S03_INI": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:inimm:1.0",
+                "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                "address_space_ref": "S03_INI",
+                "base_address": {
+                    "minimum": "0x00000000",
+                    "maximum": "0xFFFFFFFFFFFFFFFF",
+                    "width": "64"
+                },
+                "parameters": {
+                    "ADDR_WIDTH": {
+                        "value": "64",
+                        "value_src": "default"
+                    },
+                    "CATEGORY": {
+                        "value": "pl",
+                        "value_src": "default_prop"
+                    },
+                    "COMPUTED_STRATEGY": {
+                        "value": "load",
+                        "value_src": "default_prop"
+                    },
+                    "CONNECTIONS": {
+                        "value": "MC_3 { read_bw {1720} write_bw {1720} read_avg_burst {4} write_avg_burst {4}} "
+                    },
+                    "INI_STRATEGY": {
+                        "value": "auto",
+                        "value_src": "default"
+                    },
+                    "MY_CATEGORY": {
+                        "value": "pl",
+                        "value_src": "default"
+                    },
+                    "R_LATENCY": {
+                        "value": "300",
+                        "value_src": "default"
+                    },
+                    "R_MAX_BURST_LENGTH": {
+                        "value": "256",
+                        "value_src": "default"
+                    },
+                    "R_RATE_LIMITER": {
+                        "value": "10",
+                        "value_src": "default"
+                    },
+                    "R_TRAFFIC_CLASS": {
+                        "value": "BEST_EFFORT",
+                        "value_src": "default"
+                    },
+                    "WRITE_BUFFER_SIZE": {
+                        "value": "80",
+                        "value_src": "default"
+                    },
+                    "W_MAX_BURST_LENGTH": {
+                        "value": "256",
+                        "value_src": "default"
+                    },
+                    "W_RATE_LIMITER": {
+                        "value": "10",
+                        "value_src": "default"
+                    },
+                    "W_TRAFFIC_CLASS": {
+                        "value": "BEST_EFFORT",
+                        "value_src": "default"
+                    }
+                }
+            },
+            "sys_clk0": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+                "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+                "parameters": {
+                    "CAN_DEBUG": {
+                        "value": "false",
+                        "value_src": "default"
+                    },
+                    "FREQ_HZ": {
+                        "value": "250000000",
+                        "value_src": "user_prop"
+                    }
+                }
+            },
+            "CH0_DDR4_0": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:ddr4:1.0",
+                "vlnv": "xilinx.com:interface:ddr4_rtl:1.0",
+                "parameters": {
+                    "AXI_ARBITRATION_SCHEME": {
+                        "value": "TDM",
+                        "value_src": "default"
+                    },
+                    "BURST_LENGTH": {
+                        "value": "8",
+                        "value_src": "default"
+                    },
+                    "CAN_DEBUG": {
+                        "value": "false",
+                        "value_src": "default"
+                    },
+                    "CAS_LATENCY": {
+                        "value": "11",
+                        "value_src": "default"
+                    },
+                    "CAS_WRITE_LATENCY": {
+                        "value": "11",
+                        "value_src": "default"
+                    },
+                    "CS_ENABLED": {
+                        "value": "true",
+                        "value_src": "default"
+                    },
+                    "DATA_MASK_ENABLED": {
+                        "value": "true",
+                        "value_src": "default"
+                    },
+                    "DATA_WIDTH": {
+                        "value": "8",
+                        "value_src": "default"
+                    },
+                    "MEMORY_TYPE": {
+                        "value": "COMPONENTS",
+                        "value_src": "default"
+                    },
+                    "MEM_ADDR_MAP": {
+                        "value": "ROW_COLUMN_BANK",
+                        "value_src": "default"
+                    },
+                    "MY_CATEGORY": {
+                        "value": "pl",
+                        "value_src": "default"
+                    },
+                    "NOC_ID": {
+                        "value": "-1",
+                        "value_src": "default"
+                    },
+                    "SLOT": {
+                        "value": "Single",
+                        "value_src": "default"
+                    },
+                    "TIMEPERIOD_PS": {
+                        "value": "1250",
+                        "value_src": "default"
+                    },
+                    "WRITE_BUFFER_SIZE": {
+                        "value": "80",
+                        "value_src": "default"
+                    }
+                }
+            },
+            "sys_clk1": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+                "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+                "parameters": {
+                    "CAN_DEBUG": {
+                        "value": "false",
+                        "value_src": "default"
+                    },
+                    "FREQ_HZ": {
+                        "value": "250000000",
+                        "value_src": "user_prop"
+                    }
+                }
+            },
+            "CH0_DDR4_1": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:ddr4:1.0",
+                "vlnv": "xilinx.com:interface:ddr4_rtl:1.0",
+                "parameters": {
+                    "AXI_ARBITRATION_SCHEME": {
+                        "value": "TDM",
+                        "value_src": "default"
+                    },
+                    "BURST_LENGTH": {
+                        "value": "8",
+                        "value_src": "default"
+                    },
+                    "CAN_DEBUG": {
+                        "value": "false",
+                        "value_src": "default"
+                    },
+                    "CAS_LATENCY": {
+                        "value": "11",
+                        "value_src": "default"
+                    },
+                    "CAS_WRITE_LATENCY": {
+                        "value": "11",
+                        "value_src": "default"
+                    },
+                    "CS_ENABLED": {
+                        "value": "true",
+                        "value_src": "default"
+                    },
+                    "DATA_MASK_ENABLED": {
+                        "value": "true",
+                        "value_src": "default"
+                    },
+                    "DATA_WIDTH": {
+                        "value": "8",
+                        "value_src": "default"
+                    },
+                    "MEMORY_TYPE": {
+                        "value": "COMPONENTS",
+                        "value_src": "default"
+                    },
+                    "MEM_ADDR_MAP": {
+                        "value": "ROW_COLUMN_BANK",
+                        "value_src": "default"
+                    },
+                    "MY_CATEGORY": {
+                        "value": "pl",
+                        "value_src": "default"
+                    },
+                    "NOC_ID": {
+                        "value": "-1",
+                        "value_src": "default"
+                    },
+                    "SLOT": {
+                        "value": "Single",
+                        "value_src": "default"
+                    },
+                    "TIMEPERIOD_PS": {
+                        "value": "1250",
+                        "value_src": "default"
+                    },
+                    "WRITE_BUFFER_SIZE": {
+                        "value": "80",
+                        "value_src": "default"
+                    }
+                }
+            }
+        },
+        "components": {
+            "MC0_ddrc": {
+                "vlnv": "xilinx.com:ip:noc_mc_ddr4:1.0",
+                "xci_name": "bd_8b85_MC0_ddrc_0",
+                "xci_path": "ip\\ip_0\\bd_8b85_MC0_ddrc_0.xci",
+                "inst_hier_path": "MC0_ddrc",
+                "parameters": {
+                    "CONTROLLERTYPE": {
+                        "value": "DDR4_SDRAM"
+                    },
+                    "MC_ATTR_FILE": {
+                        "value": "nocattrs.dat"
+                    },
+                    "MC_CASLATENCY": {
+                        "value": "21"
+                    },
+                    "MC_CHAN_REGION0": {
+                        "value": "DDR_CH1"
+                    },
+                    "MC_CHAN_REGION1": {
+                        "value": "NONE"
+                    },
+                    "MC_CKE_WIDTH": {
+                        "value": "2"
+                    },
+                    "MC_CK_WIDTH": {
+                        "value": "2"
+                    },
+                    "MC_COMPONENT_WIDTH": {
+                        "value": "x8"
+                    },
+                    "MC_CONFIG_NUM": {
+                        "value": "config17"
+                    },
+                    "MC_CS_WIDTH": {
+                        "value": "2"
+                    },
+                    "MC_DATAWIDTH": {
+                        "value": "72"
+                    },
+                    "MC_DC_CMD_CREDITS": {
+                        "value": "0x000002a8"
+                    },
+                    "MC_DDR4_2T": {
+                        "value": "Disable"
+                    },
+                    "MC_DM_WIDTH": {
+                        "value": "9"
+                    },
+                    "MC_DQS_WIDTH": {
+                        "value": "9"
+                    },
+                    "MC_DQ_WIDTH": {
+                        "value": "72"
+                    },
+                    "MC_ECC_SCRUB_PERIOD": {
+                        "value": "0x0035BC"
+                    },
+                    "MC_ECC_SCRUB_SIZE": {
+                        "value": "16384"
+                    },
+                    "MC_EN_INTR_RESP": {
+                        "value": "FALSE"
+                    },
+                    "MC_EXMON_CLR_EXE": {
+                        "value": "0x00000100"
+                    },
+                    "MC_F1_LPDDR4_MR1": {
+                        "value": "0x0000"
+                    },
+                    "MC_F1_LPDDR4_MR2": {
+                        "value": "0x0000"
+                    },
+                    "MC_F1_LPDDR4_MR3": {
+                        "value": "0x0000"
+                    },
+                    "MC_F1_LPDDR4_MR13": {
+                        "value": "0x0000"
+                    },
+                    "MC_F1_TFAW": {
+                        "value": "21000"
+                    },
+                    "MC_F1_TFAWMIN": {
+                        "value": "21000"
+                    },
+                    "MC_F1_TRCD": {
+                        "value": "13750"
+                    },
+                    "MC_F1_TRCDMIN": {
+                        "value": "13750"
+                    },
+                    "MC_F1_TRRD_L": {
+                        "value": "8"
+                    },
+                    "MC_F1_TRRD_L_MIN": {
+                        "value": "8"
+                    },
+                    "MC_F1_TRRD_S": {
+                        "value": "4"
+                    },
+                    "MC_F1_TRRD_S_MIN": {
+                        "value": "4"
+                    },
+                    "MC_FLIPPED_PINOUT": {
+                        "value": "true"
+                    },
+                    "MC_INIT_MEM_USING_ECC_SCRUB": {
+                        "value": "true"
+                    },
+                    "MC_INPUTCLK0_PERIOD": {
+                        "value": "3998"
+                    },
+                    "MC_INTERLEAVE_SIZE": {
+                        "value": "128"
+                    },
+                    "MC_IP_TIMEPERIOD1": {
+                        "value": "695"
+                    },
+                    "MC_MEMORY_DEVICETYPE": {
+                        "value": "UDIMMs"
+                    },
+                    "MC_MEMORY_SPEEDGRADE": {
+                        "value": "DDR4-3200AA(22-22-22)"
+                    },
+                    "MC_MEMORY_TIMEPERIOD0": {
+                        "value": "727"
+                    },
+                    "MC_MEM_INIT_FILE": {
+                        "value": "no_file_loaded"
+                    },
+                    "MC_NO_CHANNELS": {
+                        "value": "Single"
+                    },
+                    "MC_ODT_WIDTH": {
+                        "value": "2"
+                    },
+                    "MC_PHYS_NAME": {
+                        "value": "DDRMC_X1Y0"
+                    },
+                    "MC_RANK": {
+                        "value": "2"
+                    },
+                    "MC_READ_BANDWIDTH": {
+                        "value": "5502.0635"
+                    },
+                    "MC_REG_ADEC0": {
+                        "value": "0x00005000"
+                    },
+                    "MC_REG_ADEC1": {
+                        "value": "0x00005000"
+                    },
+                    "MC_REG_ADEC2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_REG_ADEC3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_REG_ADEC4": {
+                        "value": "0x30c30c22"
+                    },
+                    "MC_REG_ADEC5": {
+                        "value": "0x165544d2"
+                    },
+                    "MC_REG_ADEC6": {
+                        "value": "0x1b699617"
+                    },
+                    "MC_REG_ADEC7": {
+                        "value": "0x207de75c"
+                    },
+                    "MC_REG_ADEC8": {
+                        "value": "0x03c30c21"
+                    },
+                    "MC_REG_ADEC9": {
+                        "value": "0x0a248144"
+                    },
+                    "MC_REG_ADEC10": {
+                        "value": "0x1038d30b"
+                    },
+                    "MC_REG_ADEC11": {
+                        "value": "0x00c0f191"
+                    },
+                    "MC_REG_CMDQ_BER_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_CMDQ_BEW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_CMDQ_CTRL0": {
+                        "value": "0x01ffffff"
+                    },
+                    "MC_REG_CMDQ_CTRL1": {
+                        "value": "0x01084210"
+                    },
+                    "MC_REG_CMDQ_ISR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_CMDQ_ISW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_CMDQ_LLR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_NSU0_PORT": {
+                        "value": "0x00000340"
+                    },
+                    "MC_REG_NSU1_PORT": {
+                        "value": "0x00000380"
+                    },
+                    "MC_REG_NSU2_PORT": {
+                        "value": "0x000003c0"
+                    },
+                    "MC_REG_NSU3_PORT": {
+                        "value": "0x00000400"
+                    },
+                    "MC_REG_P0_BER_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P0_BEW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P0_ISR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P0_ISW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P0_LLR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P1_BER_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P1_BEW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P1_ISR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P1_ISW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P1_LLR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P2_BER_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P2_BEW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P2_ISR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P2_ISW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P2_LLR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P3_BER_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P3_BEW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P3_ISR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P3_ISW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P3_LLR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_QOS0": {
+                        "value": "0x001e01e0"
+                    },
+                    "MC_REG_QOS1": {
+                        "value": "0x0ff00804"
+                    },
+                    "MC_REG_QOS2": {
+                        "value": "0x0003fc02"
+                    },
+                    "MC_REG_QOS_RATE_CTRL_SCALE": {
+                        "value": "0x00000000"
+                    },
+                    "MC_REG_QOS_TIMEOUT0": {
+                        "value": "0x00421084"
+                    },
+                    "MC_REG_QOS_TIMEOUT1": {
+                        "value": "0xbbbbbbbb"
+                    },
+                    "MC_REG_QOS_TIMEOUT2": {
+                        "value": "0x000000bb"
+                    },
+                    "MC_REG_RATE_CTRL_SCALE": {
+                        "value": "0x00000000"
+                    },
+                    "MC_REG_RD_DRR_TKN_P0": {
+                        "value": "0x00ff0404"
+                    },
+                    "MC_REG_RD_DRR_TKN_P1": {
+                        "value": "0x002b0404"
+                    },
+                    "MC_REG_RD_DRR_TKN_P2": {
+                        "value": "0x00f40404"
+                    },
+                    "MC_REG_RD_DRR_TKN_P3": {
+                        "value": "0x00f40404"
+                    },
+                    "MC_REG_WR_DRR_TKN_P0": {
+                        "value": "0x0000ff04"
+                    },
+                    "MC_REG_WR_DRR_TKN_P1": {
+                        "value": "0x00002b04"
+                    },
+                    "MC_REG_WR_DRR_TKN_P2": {
+                        "value": "0x0000f404"
+                    },
+                    "MC_REG_WR_DRR_TKN_P3": {
+                        "value": "0x0000f404"
+                    },
+                    "MC_TCCD_L": {
+                        "value": "7"
+                    },
+                    "MC_TCCD_L_MIN": {
+                        "value": "7"
+                    },
+                    "MC_TCKE": {
+                        "value": "7"
+                    },
+                    "MC_TCKEMIN": {
+                        "value": "7"
+                    },
+                    "MC_TFAW": {
+                        "value": "21000"
+                    },
+                    "MC_TFAWMIN": {
+                        "value": "21000"
+                    },
+                    "MC_TRC": {
+                        "value": "45750"
+                    },
+                    "MC_TRCD": {
+                        "value": "13750"
+                    },
+                    "MC_TRCDMIN": {
+                        "value": "13750"
+                    },
+                    "MC_TRCMIN": {
+                        "value": "45750"
+                    },
+                    "MC_TRP": {
+                        "value": "13750"
+                    },
+                    "MC_TRPMIN": {
+                        "value": "13750"
+                    },
+                    "MC_TRRD_L": {
+                        "value": "7"
+                    },
+                    "MC_TRRD_L_MIN": {
+                        "value": "7"
+                    },
+                    "MC_TRRD_S": {
+                        "value": "4"
+                    },
+                    "MC_TRRD_S_MIN": {
+                        "value": "4"
+                    },
+                    "MC_TXP": {
+                        "value": "9"
+                    },
+                    "MC_TXPMIN": {
+                        "value": "9"
+                    },
+                    "MC_TXPR": {
+                        "value": "496"
+                    },
+                    "MC_UB_CLK_MUX": {
+                        "value": "0x00000000"
+                    },
+                    "MC_USER_DEFINED_ADDRESS_MAP": {
+                        "value": "1CS-16RA-2BA-2BG-10CA"
+                    },
+                    "MC_WRITE_BANDWIDTH": {
+                        "value": "5502.0635"
+                    },
+                    "MC_XMPU_CONFIG0": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG1": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG2": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG3": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG4": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG5": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG6": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG7": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG8": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG9": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG10": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG11": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG12": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG13": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG14": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG15": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CTRL": {
+                        "value": "0x0000000b"
+                    },
+                    "MC_XMPU_END_HI0": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI1": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI4": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI5": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI6": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI7": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI8": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI9": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI10": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI11": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI12": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI13": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI14": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI15": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO0": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO1": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO4": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO5": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO6": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO7": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO8": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO9": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO10": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO11": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO12": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO13": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO14": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO15": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER0": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER1": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER4": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER5": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER6": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER7": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER8": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER9": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER10": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER11": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER12": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER13": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER14": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER15": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI0": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI1": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI4": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI5": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI6": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI7": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI8": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI9": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI10": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI11": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI12": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI13": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI14": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI15": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO0": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO1": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO4": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO5": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO6": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO7": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO8": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO9": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO10": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO11": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO12": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO13": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO14": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO15": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XPLL_CLKOUT1_PERIOD": {
+                        "value": "1454"
+                    },
+                    "MC_XPLL_CLKOUT1_PHASE": {
+                        "value": "255.26822558459423"
+                    },
+                    "NUM_MC": {
+                        "value": "2"
+                    },
+                    "USER_NPI_REG_MC_NSU_0_EGR": {
+                        "value": "0x00473610"
+                    },
+                    "USER_NPI_REG_MC_NSU_0_ING": {
+                        "value": "0x04534101"
+                    },
+                    "USER_NPI_REG_MC_NSU_1_EGR": {
+                        "value": "0x00473610"
+                    },
+                    "USER_NPI_REG_MC_NSU_1_ING": {
+                        "value": "0x04534101"
+                    },
+                    "USER_NPI_REG_MC_NSU_2_EGR": {
+                        "value": "0x00473610"
+                    },
+                    "USER_NPI_REG_MC_NSU_2_ING": {
+                        "value": "0x04534101"
+                    },
+                    "USER_NPI_REG_MC_NSU_3_EGR": {
+                        "value": "0x00473610"
+                    },
+                    "USER_NPI_REG_MC_NSU_3_ING": {
+                        "value": "0x04534101"
+                    }
+                },
+                "addressing": {
+                    "memory_maps": {
+                        "C0_MEMORY_MAP": {
+                            "address_blocks": {
+                                "C0_DDR_LOW0": {
+                                    "base_address": "0x00000000000",
+                                    "range": "2G",
+                                    "width": "31",
+                                    "usage": "memory"
+                                },
+                                "C0_DDR_LOW1": {
+                                    "base_address": "0x00800000000",
+                                    "range": "32G",
+                                    "width": "36",
+                                    "usage": "memory"
+                                },
+                                "C0_DDR_LOW2": {
+                                    "base_address": "0x0C000000000",
+                                    "range": "256G",
+                                    "width": "40",
+                                    "usage": "memory"
+                                },
+                                "C0_DDR_LOW3": {
+                                    "base_address": "0x10000000000",
+                                    "range": "734G",
+                                    "width": "41",
+                                    "usage": "memory"
+                                },
+                                "C0_DDR_CH1": {
+                                    "base_address": "0x50000000000",
+                                    "range": "512G",
+                                    "width": "43",
+                                    "usage": "memory"
+                                }
+                            }
+                        },
+                        "C1_MEMORY_MAP": {
+                            "address_blocks": {
+                                "C1_DDR_LOW0": {
+                                    "base_address": "0x00000000000",
+                                    "range": "2G",
+                                    "width": "31",
+                                    "usage": "memory"
+                                },
+                                "C1_DDR_LOW1": {
+                                    "base_address": "0x00800000000",
+                                    "range": "32G",
+                                    "width": "36",
+                                    "usage": "memory"
+                                },
+                                "C1_DDR_LOW2": {
+                                    "base_address": "0x0C000000000",
+                                    "range": "256G",
+                                    "width": "40",
+                                    "usage": "memory"
+                                },
+                                "C1_DDR_LOW3": {
+                                    "base_address": "0x10000000000",
+                                    "range": "734G",
+                                    "width": "41",
+                                    "usage": "memory"
+                                },
+                                "C1_DDR_CH1": {
+                                    "base_address": "0x50000000000",
+                                    "range": "512G",
+                                    "width": "43",
+                                    "usage": "memory"
+                                }
+                            }
+                        },
+                        "C2_MEMORY_MAP": {
+                            "address_blocks": {
+                                "C2_DDR_LOW0": {
+                                    "base_address": "0x00000000000",
+                                    "range": "2G",
+                                    "width": "31",
+                                    "usage": "memory"
+                                },
+                                "C2_DDR_LOW1": {
+                                    "base_address": "0x00800000000",
+                                    "range": "32G",
+                                    "width": "36",
+                                    "usage": "memory"
+                                },
+                                "C2_DDR_LOW2": {
+                                    "base_address": "0x0C000000000",
+                                    "range": "256G",
+                                    "width": "40",
+                                    "usage": "memory"
+                                },
+                                "C2_DDR_LOW3": {
+                                    "base_address": "0x10000000000",
+                                    "range": "734G",
+                                    "width": "41",
+                                    "usage": "memory"
+                                },
+                                "C2_DDR_CH1": {
+                                    "base_address": "0x50000000000",
+                                    "range": "512G",
+                                    "width": "43",
+                                    "usage": "memory"
+                                }
+                            }
+                        },
+                        "C3_MEMORY_MAP": {
+                            "address_blocks": {
+                                "C3_DDR_LOW0": {
+                                    "base_address": "0x00000000000",
+                                    "range": "2G",
+                                    "width": "31",
+                                    "usage": "memory"
+                                },
+                                "C3_DDR_LOW1": {
+                                    "base_address": "0x00800000000",
+                                    "range": "32G",
+                                    "width": "36",
+                                    "usage": "memory"
+                                },
+                                "C3_DDR_LOW2": {
+                                    "base_address": "0x0C000000000",
+                                    "range": "256G",
+                                    "width": "40",
+                                    "usage": "memory"
+                                },
+                                "C3_DDR_LOW3": {
+                                    "base_address": "0x10000000000",
+                                    "range": "734G",
+                                    "width": "41",
+                                    "usage": "memory"
+                                },
+                                "C3_DDR_CH1": {
+                                    "base_address": "0x50000000000",
+                                    "range": "512G",
+                                    "width": "43",
+                                    "usage": "memory"
+                                }
+                            }
+                        }
+                    }
+                },
+                "interface_ports": {
+                    "NPP_IN_0": {
+                        "vlnv": "xilinx.com:interface:npp_rtl:1.0",
+                        "mode": "Slave",
+                        "memory_map_ref": "C0_MEMORY_MAP"
+                    },
+                    "NPP_IN_1": {
+                        "vlnv": "xilinx.com:interface:npp_rtl:1.0",
+                        "mode": "Slave",
+                        "memory_map_ref": "C1_MEMORY_MAP"
+                    },
+                    "NPP_IN_2": {
+                        "vlnv": "xilinx.com:interface:npp_rtl:1.0",
+                        "mode": "Slave",
+                        "memory_map_ref": "C2_MEMORY_MAP"
+                    },
+                    "NPP_IN_3": {
+                        "vlnv": "xilinx.com:interface:npp_rtl:1.0",
+                        "mode": "Slave",
+                        "memory_map_ref": "C3_MEMORY_MAP"
+                    }
+                },
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    }
+                }
+            },
+            "MC1_ddrc": {
+                "vlnv": "xilinx.com:ip:noc_mc_ddr4:1.0",
+                "xci_name": "bd_8b85_MC1_ddrc_0",
+                "xci_path": "ip\\ip_1\\bd_8b85_MC1_ddrc_0.xci",
+                "inst_hier_path": "MC1_ddrc",
+                "parameters": {
+                    "CONTROLLERTYPE": {
+                        "value": "DDR4_SDRAM"
+                    },
+                    "MC_ATTR_FILE": {
+                        "value": "nocattrs.dat"
+                    },
+                    "MC_CASLATENCY": {
+                        "value": "21"
+                    },
+                    "MC_CHAN_REGION0": {
+                        "value": "DDR_CH1"
+                    },
+                    "MC_CHAN_REGION1": {
+                        "value": "NONE"
+                    },
+                    "MC_CKE_WIDTH": {
+                        "value": "2"
+                    },
+                    "MC_CK_WIDTH": {
+                        "value": "2"
+                    },
+                    "MC_COMPONENT_WIDTH": {
+                        "value": "x8"
+                    },
+                    "MC_CONFIG_NUM": {
+                        "value": "config17"
+                    },
+                    "MC_CS_WIDTH": {
+                        "value": "2"
+                    },
+                    "MC_DATAWIDTH": {
+                        "value": "72"
+                    },
+                    "MC_DC_CMD_CREDITS": {
+                        "value": "0x000002a8"
+                    },
+                    "MC_DDR4_2T": {
+                        "value": "Disable"
+                    },
+                    "MC_DM_WIDTH": {
+                        "value": "9"
+                    },
+                    "MC_DQS_WIDTH": {
+                        "value": "9"
+                    },
+                    "MC_DQ_WIDTH": {
+                        "value": "72"
+                    },
+                    "MC_ECC_SCRUB_PERIOD": {
+                        "value": "0x0035BC"
+                    },
+                    "MC_ECC_SCRUB_SIZE": {
+                        "value": "16384"
+                    },
+                    "MC_EN_INTR_RESP": {
+                        "value": "FALSE"
+                    },
+                    "MC_EXMON_CLR_EXE": {
+                        "value": "0x00000100"
+                    },
+                    "MC_F1_LPDDR4_MR1": {
+                        "value": "0x0000"
+                    },
+                    "MC_F1_LPDDR4_MR2": {
+                        "value": "0x0000"
+                    },
+                    "MC_F1_LPDDR4_MR3": {
+                        "value": "0x0000"
+                    },
+                    "MC_F1_LPDDR4_MR13": {
+                        "value": "0x0000"
+                    },
+                    "MC_F1_TFAW": {
+                        "value": "21000"
+                    },
+                    "MC_F1_TFAWMIN": {
+                        "value": "21000"
+                    },
+                    "MC_F1_TRCD": {
+                        "value": "13750"
+                    },
+                    "MC_F1_TRCDMIN": {
+                        "value": "13750"
+                    },
+                    "MC_F1_TRRD_L": {
+                        "value": "8"
+                    },
+                    "MC_F1_TRRD_L_MIN": {
+                        "value": "8"
+                    },
+                    "MC_F1_TRRD_S": {
+                        "value": "4"
+                    },
+                    "MC_F1_TRRD_S_MIN": {
+                        "value": "4"
+                    },
+                    "MC_FLIPPED_PINOUT": {
+                        "value": "true"
+                    },
+                    "MC_INIT_MEM_USING_ECC_SCRUB": {
+                        "value": "true"
+                    },
+                    "MC_INPUTCLK0_PERIOD": {
+                        "value": "3998"
+                    },
+                    "MC_INTERLEAVE_SIZE": {
+                        "value": "128"
+                    },
+                    "MC_IP_TIMEPERIOD1": {
+                        "value": "695"
+                    },
+                    "MC_MEMORY_DEVICETYPE": {
+                        "value": "UDIMMs"
+                    },
+                    "MC_MEMORY_SPEEDGRADE": {
+                        "value": "DDR4-3200AA(22-22-22)"
+                    },
+                    "MC_MEMORY_TIMEPERIOD0": {
+                        "value": "727"
+                    },
+                    "MC_MEM_INIT_FILE": {
+                        "value": "no_file_loaded"
+                    },
+                    "MC_NO_CHANNELS": {
+                        "value": "Single"
+                    },
+                    "MC_ODT_WIDTH": {
+                        "value": "2"
+                    },
+                    "MC_PHYS_NAME": {
+                        "value": "DDRMC_X0Y0"
+                    },
+                    "MC_RANK": {
+                        "value": "2"
+                    },
+                    "MC_READ_BANDWIDTH": {
+                        "value": "5502.0635"
+                    },
+                    "MC_REG_ADEC0": {
+                        "value": "0x00005000"
+                    },
+                    "MC_REG_ADEC1": {
+                        "value": "0x00005000"
+                    },
+                    "MC_REG_ADEC2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_REG_ADEC3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_REG_ADEC4": {
+                        "value": "0x30c30c22"
+                    },
+                    "MC_REG_ADEC5": {
+                        "value": "0x165544d2"
+                    },
+                    "MC_REG_ADEC6": {
+                        "value": "0x1b699617"
+                    },
+                    "MC_REG_ADEC7": {
+                        "value": "0x207de75c"
+                    },
+                    "MC_REG_ADEC8": {
+                        "value": "0x03c30c21"
+                    },
+                    "MC_REG_ADEC9": {
+                        "value": "0x0a248144"
+                    },
+                    "MC_REG_ADEC10": {
+                        "value": "0x1038d30b"
+                    },
+                    "MC_REG_ADEC11": {
+                        "value": "0x00c0f191"
+                    },
+                    "MC_REG_CMDQ_BER_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_CMDQ_BEW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_CMDQ_CTRL0": {
+                        "value": "0x01ffffff"
+                    },
+                    "MC_REG_CMDQ_CTRL1": {
+                        "value": "0x01084210"
+                    },
+                    "MC_REG_CMDQ_ISR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_CMDQ_ISW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_CMDQ_LLR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_NSU0_PORT": {
+                        "value": "0x00000240"
+                    },
+                    "MC_REG_NSU1_PORT": {
+                        "value": "0x00000280"
+                    },
+                    "MC_REG_NSU2_PORT": {
+                        "value": "0x000002c0"
+                    },
+                    "MC_REG_NSU3_PORT": {
+                        "value": "0x00000300"
+                    },
+                    "MC_REG_P0_BER_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P0_BEW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P0_ISR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P0_ISW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P0_LLR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P1_BER_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P1_BEW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P1_ISR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P1_ISW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P1_LLR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P2_BER_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P2_BEW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P2_ISR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P2_ISW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P2_LLR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P3_BER_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P3_BEW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P3_ISR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P3_ISW_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_P3_LLR_RATE_CTRL": {
+                        "value": "0x003ffc0f"
+                    },
+                    "MC_REG_QOS0": {
+                        "value": "0x001e01e0"
+                    },
+                    "MC_REG_QOS1": {
+                        "value": "0x0ff00804"
+                    },
+                    "MC_REG_QOS2": {
+                        "value": "0x0003fc02"
+                    },
+                    "MC_REG_QOS_RATE_CTRL_SCALE": {
+                        "value": "0x00000000"
+                    },
+                    "MC_REG_QOS_TIMEOUT0": {
+                        "value": "0x00421084"
+                    },
+                    "MC_REG_QOS_TIMEOUT1": {
+                        "value": "0xbbbbbbbb"
+                    },
+                    "MC_REG_QOS_TIMEOUT2": {
+                        "value": "0x000000bb"
+                    },
+                    "MC_REG_RATE_CTRL_SCALE": {
+                        "value": "0x00000000"
+                    },
+                    "MC_REG_RD_DRR_TKN_P0": {
+                        "value": "0x00ff0404"
+                    },
+                    "MC_REG_RD_DRR_TKN_P1": {
+                        "value": "0x002b0404"
+                    },
+                    "MC_REG_RD_DRR_TKN_P2": {
+                        "value": "0x00f40404"
+                    },
+                    "MC_REG_RD_DRR_TKN_P3": {
+                        "value": "0x00f40404"
+                    },
+                    "MC_REG_WR_DRR_TKN_P0": {
+                        "value": "0x0000ff04"
+                    },
+                    "MC_REG_WR_DRR_TKN_P1": {
+                        "value": "0x00002b04"
+                    },
+                    "MC_REG_WR_DRR_TKN_P2": {
+                        "value": "0x0000f404"
+                    },
+                    "MC_REG_WR_DRR_TKN_P3": {
+                        "value": "0x0000f404"
+                    },
+                    "MC_TCCD_L": {
+                        "value": "7"
+                    },
+                    "MC_TCCD_L_MIN": {
+                        "value": "7"
+                    },
+                    "MC_TCKE": {
+                        "value": "7"
+                    },
+                    "MC_TCKEMIN": {
+                        "value": "7"
+                    },
+                    "MC_TFAW": {
+                        "value": "21000"
+                    },
+                    "MC_TFAWMIN": {
+                        "value": "21000"
+                    },
+                    "MC_TRC": {
+                        "value": "45750"
+                    },
+                    "MC_TRCD": {
+                        "value": "13750"
+                    },
+                    "MC_TRCDMIN": {
+                        "value": "13750"
+                    },
+                    "MC_TRCMIN": {
+                        "value": "45750"
+                    },
+                    "MC_TRP": {
+                        "value": "13750"
+                    },
+                    "MC_TRPMIN": {
+                        "value": "13750"
+                    },
+                    "MC_TRRD_L": {
+                        "value": "7"
+                    },
+                    "MC_TRRD_L_MIN": {
+                        "value": "7"
+                    },
+                    "MC_TRRD_S": {
+                        "value": "4"
+                    },
+                    "MC_TRRD_S_MIN": {
+                        "value": "4"
+                    },
+                    "MC_TXP": {
+                        "value": "9"
+                    },
+                    "MC_TXPMIN": {
+                        "value": "9"
+                    },
+                    "MC_TXPR": {
+                        "value": "496"
+                    },
+                    "MC_UB_CLK_MUX": {
+                        "value": "0x00000000"
+                    },
+                    "MC_USER_DEFINED_ADDRESS_MAP": {
+                        "value": "1CS-16RA-2BA-2BG-10CA"
+                    },
+                    "MC_WRITE_BANDWIDTH": {
+                        "value": "5502.0635"
+                    },
+                    "MC_XMPU_CONFIG0": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG1": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG2": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG3": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG4": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG5": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG6": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG7": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG8": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG9": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG10": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG11": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG12": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG13": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG14": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CONFIG15": {
+                        "value": "0x00000008"
+                    },
+                    "MC_XMPU_CTRL": {
+                        "value": "0x0000000b"
+                    },
+                    "MC_XMPU_END_HI0": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI1": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI4": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI5": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI6": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI7": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI8": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI9": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI10": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI11": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI12": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI13": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI14": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_HI15": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO0": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO1": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO4": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO5": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO6": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO7": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO8": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO9": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO10": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO11": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO12": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO13": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO14": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_END_LO15": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER0": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER1": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER4": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER5": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER6": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER7": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER8": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER9": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER10": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER11": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER12": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER13": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER14": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_MASTER15": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI0": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI1": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI4": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI5": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI6": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI7": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI8": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI9": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI10": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI11": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI12": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI13": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI14": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_HI15": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO0": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO1": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO2": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO3": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO4": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO5": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO6": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO7": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO8": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO9": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO10": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO11": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO12": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO13": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO14": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XMPU_START_LO15": {
+                        "value": "0x00000000"
+                    },
+                    "MC_XPLL_CLKOUT1_PERIOD": {
+                        "value": "1454"
+                    },
+                    "MC_XPLL_CLKOUT1_PHASE": {
+                        "value": "255.26822558459423"
+                    },
+                    "NUM_MC": {
+                        "value": "2"
+                    },
+                    "USER_NPI_REG_MC_NSU_0_EGR": {
+                        "value": "0x00473610"
+                    },
+                    "USER_NPI_REG_MC_NSU_0_ING": {
+                        "value": "0x04534101"
+                    },
+                    "USER_NPI_REG_MC_NSU_1_EGR": {
+                        "value": "0x00473610"
+                    },
+                    "USER_NPI_REG_MC_NSU_1_ING": {
+                        "value": "0x04534101"
+                    },
+                    "USER_NPI_REG_MC_NSU_2_EGR": {
+                        "value": "0x00473610"
+                    },
+                    "USER_NPI_REG_MC_NSU_2_ING": {
+                        "value": "0x04534101"
+                    },
+                    "USER_NPI_REG_MC_NSU_3_EGR": {
+                        "value": "0x00473610"
+                    },
+                    "USER_NPI_REG_MC_NSU_3_ING": {
+                        "value": "0x04534101"
+                    }
+                },
+                "addressing": {
+                    "memory_maps": {
+                        "C0_MEMORY_MAP": {
+                            "address_blocks": {
+                                "C0_DDR_LOW0": {
+                                    "base_address": "0x00000000000",
+                                    "range": "2G",
+                                    "width": "31",
+                                    "usage": "memory"
+                                },
+                                "C0_DDR_LOW1": {
+                                    "base_address": "0x00800000000",
+                                    "range": "32G",
+                                    "width": "36",
+                                    "usage": "memory"
+                                },
+                                "C0_DDR_LOW2": {
+                                    "base_address": "0x0C000000000",
+                                    "range": "256G",
+                                    "width": "40",
+                                    "usage": "memory"
+                                },
+                                "C0_DDR_LOW3": {
+                                    "base_address": "0x10000000000",
+                                    "range": "734G",
+                                    "width": "41",
+                                    "usage": "memory"
+                                },
+                                "C0_DDR_CH1": {
+                                    "base_address": "0x50000000000",
+                                    "range": "512G",
+                                    "width": "43",
+                                    "usage": "memory"
+                                }
+                            }
+                        },
+                        "C1_MEMORY_MAP": {
+                            "address_blocks": {
+                                "C1_DDR_LOW0": {
+                                    "base_address": "0x00000000000",
+                                    "range": "2G",
+                                    "width": "31",
+                                    "usage": "memory"
+                                },
+                                "C1_DDR_LOW1": {
+                                    "base_address": "0x00800000000",
+                                    "range": "32G",
+                                    "width": "36",
+                                    "usage": "memory"
+                                },
+                                "C1_DDR_LOW2": {
+                                    "base_address": "0x0C000000000",
+                                    "range": "256G",
+                                    "width": "40",
+                                    "usage": "memory"
+                                },
+                                "C1_DDR_LOW3": {
+                                    "base_address": "0x10000000000",
+                                    "range": "734G",
+                                    "width": "41",
+                                    "usage": "memory"
+                                },
+                                "C1_DDR_CH1": {
+                                    "base_address": "0x50000000000",
+                                    "range": "512G",
+                                    "width": "43",
+                                    "usage": "memory"
+                                }
+                            }
+                        },
+                        "C2_MEMORY_MAP": {
+                            "address_blocks": {
+                                "C2_DDR_LOW0": {
+                                    "base_address": "0x00000000000",
+                                    "range": "2G",
+                                    "width": "31",
+                                    "usage": "memory"
+                                },
+                                "C2_DDR_LOW1": {
+                                    "base_address": "0x00800000000",
+                                    "range": "32G",
+                                    "width": "36",
+                                    "usage": "memory"
+                                },
+                                "C2_DDR_LOW2": {
+                                    "base_address": "0x0C000000000",
+                                    "range": "256G",
+                                    "width": "40",
+                                    "usage": "memory"
+                                },
+                                "C2_DDR_LOW3": {
+                                    "base_address": "0x10000000000",
+                                    "range": "734G",
+                                    "width": "41",
+                                    "usage": "memory"
+                                },
+                                "C2_DDR_CH1": {
+                                    "base_address": "0x50000000000",
+                                    "range": "512G",
+                                    "width": "43",
+                                    "usage": "memory"
+                                }
+                            }
+                        },
+                        "C3_MEMORY_MAP": {
+                            "address_blocks": {
+                                "C3_DDR_LOW0": {
+                                    "base_address": "0x00000000000",
+                                    "range": "2G",
+                                    "width": "31",
+                                    "usage": "memory"
+                                },
+                                "C3_DDR_LOW1": {
+                                    "base_address": "0x00800000000",
+                                    "range": "32G",
+                                    "width": "36",
+                                    "usage": "memory"
+                                },
+                                "C3_DDR_LOW2": {
+                                    "base_address": "0x0C000000000",
+                                    "range": "256G",
+                                    "width": "40",
+                                    "usage": "memory"
+                                },
+                                "C3_DDR_LOW3": {
+                                    "base_address": "0x10000000000",
+                                    "range": "734G",
+                                    "width": "41",
+                                    "usage": "memory"
+                                },
+                                "C3_DDR_CH1": {
+                                    "base_address": "0x50000000000",
+                                    "range": "512G",
+                                    "width": "43",
+                                    "usage": "memory"
+                                }
+                            }
+                        }
+                    }
+                },
+                "interface_ports": {
+                    "NPP_IN_0": {
+                        "vlnv": "xilinx.com:interface:npp_rtl:1.0",
+                        "mode": "Slave",
+                        "memory_map_ref": "C0_MEMORY_MAP"
+                    },
+                    "NPP_IN_1": {
+                        "vlnv": "xilinx.com:interface:npp_rtl:1.0",
+                        "mode": "Slave",
+                        "memory_map_ref": "C1_MEMORY_MAP"
+                    },
+                    "NPP_IN_2": {
+                        "vlnv": "xilinx.com:interface:npp_rtl:1.0",
+                        "mode": "Slave",
+                        "memory_map_ref": "C2_MEMORY_MAP"
+                    },
+                    "NPP_IN_3": {
+                        "vlnv": "xilinx.com:interface:npp_rtl:1.0",
+                        "mode": "Slave",
+                        "memory_map_ref": "C3_MEMORY_MAP"
+                    }
+                },
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    }
+                }
+            },
+            "hier_nsw": {
+                "interface_ports": {
+                    "S00_INI": {
+                        "mode": "Slave",
+                        "vlnv_bus_definition": "xilinx.com:interface:inimm:1.0",
+                        "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                        "parameters": {
+                            "MY_CATEGORY": {
+                                "value": "pl",
+                                "value_src": "default"
+                            },
+                            "R_LATENCY": {
+                                "value": "300",
+                                "value_src": "default"
+                            },
+                            "R_MAX_BURST_LENGTH": {
+                                "value": "256",
+                                "value_src": "default"
+                            },
+                            "R_RATE_LIMITER": {
+                                "value": "10",
+                                "value_src": "default"
+                            },
+                            "R_TRAFFIC_CLASS": {
+                                "value": "BEST_EFFORT",
+                                "value_src": "default"
+                            },
+                            "WRITE_BUFFER_SIZE": {
+                                "value": "80",
+                                "value_src": "default"
+                            },
+                            "W_MAX_BURST_LENGTH": {
+                                "value": "256",
+                                "value_src": "default"
+                            },
+                            "W_RATE_LIMITER": {
+                                "value": "10",
+                                "value_src": "default"
+                            },
+                            "W_TRAFFIC_CLASS": {
+                                "value": "BEST_EFFORT",
+                                "value_src": "default"
+                            }
+                        }
+                    },
+                    "S01_INI": {
+                        "mode": "Slave",
+                        "vlnv_bus_definition": "xilinx.com:interface:inimm:1.0",
+                        "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                        "parameters": {
+                            "MY_CATEGORY": {
+                                "value": "pl",
+                                "value_src": "default"
+                            },
+                            "R_LATENCY": {
+                                "value": "300",
+                                "value_src": "default"
+                            },
+                            "R_MAX_BURST_LENGTH": {
+                                "value": "256",
+                                "value_src": "default"
+                            },
+                            "R_RATE_LIMITER": {
+                                "value": "10",
+                                "value_src": "default"
+                            },
+                            "R_TRAFFIC_CLASS": {
+                                "value": "BEST_EFFORT",
+                                "value_src": "default"
+                            },
+                            "WRITE_BUFFER_SIZE": {
+                                "value": "80",
+                                "value_src": "default"
+                            },
+                            "W_MAX_BURST_LENGTH": {
+                                "value": "256",
+                                "value_src": "default"
+                            },
+                            "W_RATE_LIMITER": {
+                                "value": "10",
+                                "value_src": "default"
+                            },
+                            "W_TRAFFIC_CLASS": {
+                                "value": "BEST_EFFORT",
+                                "value_src": "default"
+                            }
+                        }
+                    },
+                    "S02_INI": {
+                        "mode": "Slave",
+                        "vlnv_bus_definition": "xilinx.com:interface:inimm:1.0",
+                        "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                        "parameters": {
+                            "MY_CATEGORY": {
+                                "value": "pl",
+                                "value_src": "default"
+                            },
+                            "R_LATENCY": {
+                                "value": "300",
+                                "value_src": "default"
+                            },
+                            "R_MAX_BURST_LENGTH": {
+                                "value": "256",
+                                "value_src": "default"
+                            },
+                            "R_RATE_LIMITER": {
+                                "value": "10",
+                                "value_src": "default"
+                            },
+                            "R_TRAFFIC_CLASS": {
+                                "value": "BEST_EFFORT",
+                                "value_src": "default"
+                            },
+                            "WRITE_BUFFER_SIZE": {
+                                "value": "80",
+                                "value_src": "default"
+                            },
+                            "W_MAX_BURST_LENGTH": {
+                                "value": "256",
+                                "value_src": "default"
+                            },
+                            "W_RATE_LIMITER": {
+                                "value": "10",
+                                "value_src": "default"
+                            },
+                            "W_TRAFFIC_CLASS": {
+                                "value": "BEST_EFFORT",
+                                "value_src": "default"
+                            }
+                        }
+                    },
+                    "S03_INI": {
+                        "mode": "Slave",
+                        "vlnv_bus_definition": "xilinx.com:interface:inimm:1.0",
+                        "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                        "parameters": {
+                            "MY_CATEGORY": {
+                                "value": "pl",
+                                "value_src": "default"
+                            },
+                            "R_LATENCY": {
+                                "value": "300",
+                                "value_src": "default"
+                            },
+                            "R_MAX_BURST_LENGTH": {
+                                "value": "256",
+                                "value_src": "default"
+                            },
+                            "R_RATE_LIMITER": {
+                                "value": "10",
+                                "value_src": "default"
+                            },
+                            "R_TRAFFIC_CLASS": {
+                                "value": "BEST_EFFORT",
+                                "value_src": "default"
+                            },
+                            "WRITE_BUFFER_SIZE": {
+                                "value": "80",
+                                "value_src": "default"
+                            },
+                            "W_MAX_BURST_LENGTH": {
+                                "value": "256",
+                                "value_src": "default"
+                            },
+                            "W_RATE_LIMITER": {
+                                "value": "10",
+                                "value_src": "default"
+                            },
+                            "W_TRAFFIC_CLASS": {
+                                "value": "BEST_EFFORT",
+                                "value_src": "default"
+                            }
+                        }
+                    }
+                },
+                "ports": {
+                    "NSU": {
+                        "direction": "O"
+                    },
+                    "NSU1": {
+                        "direction": "O"
+                    },
+                    "NSU2": {
+                        "direction": "O"
+                    },
+                    "NSU3": {
+                        "direction": "O"
+                    }
+                },
+                "components": {
+                    "S00_INI_nsw": {
+                        "vlnv": "xilinx.com:ip:noc_nsw:1.0",
+                        "xci_name": "bd_8b85_S00_INI_nsw_0",
+                        "xci_path": "ip\\ip_2\\bd_8b85_S00_INI_nsw_0.xci",
+                        "inst_hier_path": "hier_nsw/S00_INI_nsw",
+                        "parameters": {
+                            "NSW_MODE": {
+                                "value": "SW_INI_Master"
+                            },
+                            "NSW_NUM_PATHS": {
+                                "value": "1"
+                            },
+                            "NSW_PATH_TYPE": {
+                                "value": "RDWR"
+                            },
+                            "NSW_PROTOCOL": {
+                                "value": "MemoryMapped"
+                            }
+                        },
+                        "addressing": {
+                            "memory_maps": {
+                                "S_INIMM": {
+                                    "address_blocks": {
+                                        "Reg": {
+                                            "base_address": "0",
+                                            "range": "64K",
+                                            "width": "16",
+                                            "usage": "register"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "interface_ports": {
+                            "S_INIMM": {
+                                "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                                "mode": "Slave",
+                                "memory_map_ref": "S_INIMM"
+                            }
+                        },
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_CELL": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "MC0_nsw": {
+                        "vlnv": "xilinx.com:ip:noc_nsw:1.0",
+                        "xci_name": "bd_8b85_MC0_nsw_0",
+                        "xci_path": "ip\\ip_3\\bd_8b85_MC0_nsw_0.xci",
+                        "inst_hier_path": "hier_nsw/MC0_nsw",
+                        "parameters": {
+                            "NSW_MODE": {
+                                "value": "SW_Slave"
+                            },
+                            "NSW_NUM_PATHS": {
+                                "value": "1"
+                            },
+                            "NSW_PATH_TYPE": {
+                                "value": "RDWR"
+                            },
+                            "NSW_PROTOCOL": {
+                                "value": "MemoryMapped"
+                            }
+                        },
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_CELL": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "S01_INI_nsw": {
+                        "vlnv": "xilinx.com:ip:noc_nsw:1.0",
+                        "xci_name": "bd_8b85_S01_INI_nsw_0",
+                        "xci_path": "ip\\ip_4\\bd_8b85_S01_INI_nsw_0.xci",
+                        "inst_hier_path": "hier_nsw/S01_INI_nsw",
+                        "parameters": {
+                            "NSW_MODE": {
+                                "value": "SW_INI_Master"
+                            },
+                            "NSW_NUM_PATHS": {
+                                "value": "1"
+                            },
+                            "NSW_PATH_TYPE": {
+                                "value": "RDWR"
+                            },
+                            "NSW_PROTOCOL": {
+                                "value": "MemoryMapped"
+                            }
+                        },
+                        "addressing": {
+                            "memory_maps": {
+                                "S_INIMM": {
+                                    "address_blocks": {
+                                        "Reg": {
+                                            "base_address": "0",
+                                            "range": "64K",
+                                            "width": "16",
+                                            "usage": "register"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "interface_ports": {
+                            "S_INIMM": {
+                                "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                                "mode": "Slave",
+                                "memory_map_ref": "S_INIMM"
+                            }
+                        },
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_CELL": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "MC1_nsw": {
+                        "vlnv": "xilinx.com:ip:noc_nsw:1.0",
+                        "xci_name": "bd_8b85_MC1_nsw_0",
+                        "xci_path": "ip\\ip_5\\bd_8b85_MC1_nsw_0.xci",
+                        "inst_hier_path": "hier_nsw/MC1_nsw",
+                        "parameters": {
+                            "NSW_MODE": {
+                                "value": "SW_Slave"
+                            },
+                            "NSW_NUM_PATHS": {
+                                "value": "1"
+                            },
+                            "NSW_PATH_TYPE": {
+                                "value": "RDWR"
+                            },
+                            "NSW_PROTOCOL": {
+                                "value": "MemoryMapped"
+                            }
+                        },
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_CELL": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "S02_INI_nsw": {
+                        "vlnv": "xilinx.com:ip:noc_nsw:1.0",
+                        "xci_name": "bd_8b85_S02_INI_nsw_0",
+                        "xci_path": "ip\\ip_6\\bd_8b85_S02_INI_nsw_0.xci",
+                        "inst_hier_path": "hier_nsw/S02_INI_nsw",
+                        "parameters": {
+                            "NSW_MODE": {
+                                "value": "SW_INI_Master"
+                            },
+                            "NSW_NUM_PATHS": {
+                                "value": "1"
+                            },
+                            "NSW_PATH_TYPE": {
+                                "value": "RDWR"
+                            },
+                            "NSW_PROTOCOL": {
+                                "value": "MemoryMapped"
+                            }
+                        },
+                        "addressing": {
+                            "memory_maps": {
+                                "S_INIMM": {
+                                    "address_blocks": {
+                                        "Reg": {
+                                            "base_address": "0",
+                                            "range": "64K",
+                                            "width": "16",
+                                            "usage": "register"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "interface_ports": {
+                            "S_INIMM": {
+                                "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                                "mode": "Slave",
+                                "memory_map_ref": "S_INIMM"
+                            }
+                        },
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_CELL": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "MC2_nsw": {
+                        "vlnv": "xilinx.com:ip:noc_nsw:1.0",
+                        "xci_name": "bd_8b85_MC2_nsw_0",
+                        "xci_path": "ip\\ip_7\\bd_8b85_MC2_nsw_0.xci",
+                        "inst_hier_path": "hier_nsw/MC2_nsw",
+                        "parameters": {
+                            "NSW_MODE": {
+                                "value": "SW_Slave"
+                            },
+                            "NSW_NUM_PATHS": {
+                                "value": "1"
+                            },
+                            "NSW_PATH_TYPE": {
+                                "value": "RDWR"
+                            },
+                            "NSW_PROTOCOL": {
+                                "value": "MemoryMapped"
+                            }
+                        },
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_CELL": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "S03_INI_nsw": {
+                        "vlnv": "xilinx.com:ip:noc_nsw:1.0",
+                        "xci_name": "bd_8b85_S03_INI_nsw_0",
+                        "xci_path": "ip\\ip_8\\bd_8b85_S03_INI_nsw_0.xci",
+                        "inst_hier_path": "hier_nsw/S03_INI_nsw",
+                        "parameters": {
+                            "NSW_MODE": {
+                                "value": "SW_INI_Master"
+                            },
+                            "NSW_NUM_PATHS": {
+                                "value": "1"
+                            },
+                            "NSW_PATH_TYPE": {
+                                "value": "RDWR"
+                            },
+                            "NSW_PROTOCOL": {
+                                "value": "MemoryMapped"
+                            }
+                        },
+                        "addressing": {
+                            "memory_maps": {
+                                "S_INIMM": {
+                                    "address_blocks": {
+                                        "Reg": {
+                                            "base_address": "0",
+                                            "range": "64K",
+                                            "width": "16",
+                                            "usage": "register"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "interface_ports": {
+                            "S_INIMM": {
+                                "vlnv": "xilinx.com:interface:inimm_rtl:1.0",
+                                "mode": "Slave",
+                                "memory_map_ref": "S_INIMM"
+                            }
+                        },
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_CELL": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "MC3_nsw": {
+                        "vlnv": "xilinx.com:ip:noc_nsw:1.0",
+                        "xci_name": "bd_8b85_MC3_nsw_0",
+                        "xci_path": "ip\\ip_9\\bd_8b85_MC3_nsw_0.xci",
+                        "inst_hier_path": "hier_nsw/MC3_nsw",
+                        "parameters": {
+                            "NSW_MODE": {
+                                "value": "SW_Slave"
+                            },
+                            "NSW_NUM_PATHS": {
+                                "value": "1"
+                            },
+                            "NSW_PATH_TYPE": {
+                                "value": "RDWR"
+                            },
+                            "NSW_PROTOCOL": {
+                                "value": "MemoryMapped"
+                            }
+                        },
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_CELL": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    }
+                },
+                "interface_nets": {
+                    "S03_INI_nsw_M00_INCMM": {
+                        "interface_ports": [
+                            "S03_INI_nsw/M00_INCMM",
+                            "MC3_nsw/S00_INCMM"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "S02_INI_nsw_M00_INCMM": {
+                        "interface_ports": [
+                            "S02_INI_nsw/M00_INCMM",
+                            "MC2_nsw/S00_INCMM"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "S00_INI_1": {
+                        "interface_ports": [
+                            "S00_INI",
+                            "S00_INI_nsw/S_INIMM"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "S02_INI_1": {
+                        "interface_ports": [
+                            "S02_INI",
+                            "S02_INI_nsw/S_INIMM"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "S01_INI_1": {
+                        "interface_ports": [
+                            "S01_INI",
+                            "S01_INI_nsw/S_INIMM"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "S03_INI_1": {
+                        "interface_ports": [
+                            "S03_INI",
+                            "S03_INI_nsw/S_INIMM"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "S01_INI_nsw_M00_INCMM": {
+                        "interface_ports": [
+                            "S01_INI_nsw/M00_INCMM",
+                            "MC1_nsw/S00_INCMM"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "S00_INI_nsw_M00_INCMM": {
+                        "interface_ports": [
+                            "S00_INI_nsw/M00_INCMM",
+                            "MC0_nsw/S00_INCMM"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    }
+                },
+                "nets": {
+                    "MC0_nsw_NSU": {
+                        "ports": [
+                            "MC0_nsw/NSU",
+                            "NSU"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "MC1_nsw_NSU": {
+                        "ports": [
+                            "MC1_nsw/NSU",
+                            "NSU1"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "MC2_nsw_NSU": {
+                        "ports": [
+                            "MC2_nsw/NSU",
+                            "NSU2"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    },
+                    "MC3_nsw_NSU": {
+                        "ports": [
+                            "MC3_nsw/NSU",
+                            "NSU3"
+                        ],
+                        "hdl_attributes": {
+                            "DONT_TOUCH": {
+                                "value": "true"
+                            },
+                            "NOC.IS_NOC_NET": {
+                                "value": "true"
+                            },
+                            "SYNTH_ONLY": {
+                                "value": "true"
+                            }
+                        }
+                    }
+                },
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    },
+                    "NOC.IS_HIER_NSW": {
+                        "value": "true"
+                    },
+                    "NOC.IS_NOC_CELL": {
+                        "value": "true"
+                    },
+                    "SYNTH_ONLY": {
+                        "value": "true"
+                    }
+                }
+            }
+        },
+        "interface_nets": {
+            "S00_INI_1": {
+                "interface_ports": [
+                    "S00_INI",
+                    "hier_nsw/S00_INI"
+                ],
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    },
+                    "NOC.IS_NOC_NET": {
+                        "value": "true"
+                    },
+                    "SYNTH_ONLY": {
+                        "value": "true"
+                    }
+                }
+            },
+            "MC1_ddrc_CH0_DDR4": {
+                "interface_ports": [
+                    "CH0_DDR4_1",
+                    "MC1_ddrc/CH0_DDR4"
+                ]
+            },
+            "sys_clk1_1": {
+                "interface_ports": [
+                    "sys_clk1",
+                    "MC1_ddrc/SYS_CLK"
+                ]
+            },
+            "sys_clk0_1": {
+                "interface_ports": [
+                    "sys_clk0",
+                    "MC0_ddrc/SYS_CLK"
+                ]
+            },
+            "MC0_ddrc_CH0_DDR4": {
+                "interface_ports": [
+                    "CH0_DDR4_0",
+                    "MC0_ddrc/CH0_DDR4"
+                ]
+            },
+            "S02_INI_1": {
+                "interface_ports": [
+                    "S02_INI",
+                    "hier_nsw/S02_INI"
+                ],
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    },
+                    "NOC.IS_NOC_NET": {
+                        "value": "true"
+                    },
+                    "SYNTH_ONLY": {
+                        "value": "true"
+                    }
+                }
+            },
+            "S03_INI_1": {
+                "interface_ports": [
+                    "S03_INI",
+                    "hier_nsw/S03_INI"
+                ],
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    },
+                    "NOC.IS_NOC_NET": {
+                        "value": "true"
+                    },
+                    "SYNTH_ONLY": {
+                        "value": "true"
+                    }
+                }
+            },
+            "S01_INI_1": {
+                "interface_ports": [
+                    "S01_INI",
+                    "hier_nsw/S01_INI"
+                ],
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    },
+                    "NOC.IS_NOC_NET": {
+                        "value": "true"
+                    },
+                    "SYNTH_ONLY": {
+                        "value": "true"
+                    }
+                }
+            }
+        },
+        "nets": {
+            "mc0_ddrc_noc2dmc_credit_rdy_0": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_credit_rdy_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_credit_rtn_0": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_credit_rtn_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_data_in_0": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_data_in_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_valid_in_0": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_valid_in_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_credit_rdy_1": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_credit_rdy_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_credit_rtn_1": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_credit_rtn_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_data_in_1": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_data_in_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_valid_in_1": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_valid_in_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_credit_rdy_2": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_credit_rdy_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_credit_rtn_2": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_credit_rtn_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_data_in_2": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_data_in_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_valid_in_2": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_valid_in_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_credit_rdy_3": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_credit_rdy_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_credit_rtn_3": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_credit_rtn_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_data_in_3": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_data_in_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_valid_in_3": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_valid_in_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_credit_rdy_0": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_credit_rdy_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_credit_rtn_0": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_credit_rtn_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_data_out_0": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_data_out_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_valid_out_0": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_valid_out_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_credit_rdy_1": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_credit_rdy_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_credit_rtn_1": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_credit_rtn_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_data_out_1": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_data_out_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_valid_out_1": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_valid_out_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_credit_rdy_2": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_credit_rdy_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_credit_rtn_2": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_credit_rtn_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_data_out_2": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_data_out_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_valid_out_2": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_valid_out_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_credit_rdy_3": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_credit_rdy_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_noc2dmc_credit_rtn_3": {
+                "ports": [
+                    "MC0_ddrc/noc2dmc_credit_rtn_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_data_out_3": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_data_out_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc0_ddrc_dmc2noc_valid_out_3": {
+                "ports": [
+                    "MC0_ddrc/dmc2noc_valid_out_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_credit_rdy_0": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_credit_rdy_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_credit_rtn_0": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_credit_rtn_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_data_in_0": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_data_in_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_valid_in_0": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_valid_in_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_credit_rdy_1": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_credit_rdy_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_credit_rtn_1": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_credit_rtn_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_data_in_1": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_data_in_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_valid_in_1": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_valid_in_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_credit_rdy_2": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_credit_rdy_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_credit_rtn_2": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_credit_rtn_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_data_in_2": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_data_in_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_valid_in_2": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_valid_in_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_credit_rdy_3": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_credit_rdy_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_credit_rtn_3": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_credit_rtn_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_data_in_3": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_data_in_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_valid_in_3": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_valid_in_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_credit_rdy_0": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_credit_rdy_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_credit_rtn_0": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_credit_rtn_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_data_out_0": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_data_out_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_valid_out_0": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_valid_out_0"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_credit_rdy_1": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_credit_rdy_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_credit_rtn_1": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_credit_rtn_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_data_out_1": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_data_out_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_valid_out_1": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_valid_out_1"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_credit_rdy_2": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_credit_rdy_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_credit_rtn_2": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_credit_rtn_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_data_out_2": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_data_out_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_valid_out_2": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_valid_out_2"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_credit_rdy_3": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_credit_rdy_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_noc2dmc_credit_rtn_3": {
+                "ports": [
+                    "MC1_ddrc/noc2dmc_credit_rtn_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_data_out_3": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_data_out_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "mc1_ddrc_dmc2noc_valid_out_3": {
+                "ports": [
+                    "MC1_ddrc/dmc2noc_valid_out_3"
+                ],
+                "hdl_attributes": {
+                    "EXT_CONN": {
+                        "value": "TRUE"
+                    },
+                    "HIDDEN": {
+                        "value": "TRUE"
+                    },
+                    "SIM_ONLY": {
+                        "value": "TRUE"
+                    }
+                }
+            },
+            "MC0_nsw_NSU": {
+                "ports": [
+                    "hier_nsw/NSU",
+                    "MC0_ddrc/from_noc_0",
+                    "MC1_ddrc/from_noc_0"
+                ],
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    },
+                    "NOC.IS_NOC_NET": {
+                        "value": "true"
+                    },
+                    "SYNTH_ONLY": {
+                        "value": "true"
+                    }
+                }
+            },
+            "MC1_nsw_NSU": {
+                "ports": [
+                    "hier_nsw/NSU1",
+                    "MC0_ddrc/from_noc_1",
+                    "MC1_ddrc/from_noc_1"
+                ],
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    },
+                    "NOC.IS_NOC_NET": {
+                        "value": "true"
+                    },
+                    "SYNTH_ONLY": {
+                        "value": "true"
+                    }
+                }
+            },
+            "MC2_nsw_NSU": {
+                "ports": [
+                    "hier_nsw/NSU2",
+                    "MC0_ddrc/from_noc_2",
+                    "MC1_ddrc/from_noc_2"
+                ],
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    },
+                    "NOC.IS_NOC_NET": {
+                        "value": "true"
+                    },
+                    "SYNTH_ONLY": {
+                        "value": "true"
+                    }
+                }
+            },
+            "MC3_nsw_NSU": {
+                "ports": [
+                    "hier_nsw/NSU3",
+                    "MC0_ddrc/from_noc_3",
+                    "MC1_ddrc/from_noc_3"
+                ],
+                "hdl_attributes": {
+                    "DONT_TOUCH": {
+                        "value": "true"
+                    },
+                    "NOC.IS_NOC_NET": {
+                        "value": "true"
+                    },
+                    "SYNTH_ONLY": {
+                        "value": "true"
+                    }
+                }
+            }
+        },
+        "addressing": {
+            "/": {
+                "address_spaces": {
+                    "S00_INI": {
+                        "range": "16E",
+                        "width": "64"
+                    },
+                    "S01_INI": {
+                        "range": "16E",
+                        "width": "64"
+                    },
+                    "S02_INI": {
+                        "range": "16E",
+                        "width": "64"
+                    },
+                    "S03_INI": {
+                        "range": "16E",
+                        "width": "64"
+                    }
+                }
+            }
+        }
+    }
+}
